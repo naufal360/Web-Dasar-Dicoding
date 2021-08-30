@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@515&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+    background-color: whitesmoke;
+}
+
+h2, h3 {
+    color: #000000;
+}
+
+#content {
+    float: left;
+    width: 75%;
+    padding: 10px 50px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+}
+
+footer{
+    padding: 20px;
+    color: aqua;
+    background-color: #52006A;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* === header === */
+
+
+/* jumbotron */
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+    color: whitesmoke;
+    background-image: url('../../assets/image/jumbotron-nou.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px;
+    overflow: hidden;
+}
+
+.jumbotron img {
+    width: 300px;
+    height: 200px;
+}
+.jumbotron h1 span {
+    color: #CD113B;
+}
+
+/* nav */
+
+nav {
+    background-color: #52006A;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: aqua;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+
+/* === main === */
+
+.featured-image {
+    flex-basis: 30%;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-featured {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card section img {
+    width: 400px;
+    height: 260px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* === aside === */
+.profile section img {
+    width: 200px;
+}
+
+.profile section table {
+    font-size: 15px;
+}
+
+.profile img {
+    width: 200px;
+    border-radius: 50px;
+}
+
+.profile {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    img {
+        flex-basis: 30%;
+        float: left;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    #new {
+        text-align: center;
+        flex-basis: 70%;
+    }
+
+    .flex-row {
+        display: inherit;
+    }
+
+    .jumbotron img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .featured-image {
+        width: 235px;
+        height: 160px;
+    }
+
+    .card section img {
+        width: 235px;
+        height: 160px;
+    }
+
+    .card {
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        flex-basis: 30%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    .profile header img {
+        margin: 20px 40px 20px 40px;
+    }
+}
